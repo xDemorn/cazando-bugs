@@ -4,44 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cazando Bugs - Podcasts</title>
-    <script src="/src/main.ts" type="module"></script>
+    <title>cazando-bugs</title>
   </head>
   <body>
-    <header>
-      <img src="public/cazando-bugs-logo.png" alt="Logo" class="icon">
-      <span class="title">Cazando Bugs</span>
-    </header>
-
-    <main id="app">
-      <article class="podcast upcoming">
-        <div class="what">
-          <span>?</span>
-        </div>
-        <div class="content">
-          <span>Disponible en...</span>
-          <span id="countdown"></span>
-        </div>
-      </article>
-
-      <article class="podcast">
-        <div class="top">
-          <img src="public/spaghetti-code-podcast-thumbnail.jpg" alt="Podcast Icon">
-          <span class="pill">Tecnología</span>
-          <div class="action">
-            <button></button>
-          </div>
-        </div>
-        <div class="bottom">
-          <span class="author">Cazando Bugs</span>
-          <span class="title">Código espagueti</span>
-        </div>
-      </article>
-    </main>
-
-    <footer>
-      <input type="email" name="sub-newsletter" id="subs-newsletter" placeholder="example@gmail.com">
-      <button>Suscribete al newsletter</button>
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

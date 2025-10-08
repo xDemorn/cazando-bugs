@@ -1,0 +1,6 @@
+main {
+    margin: 0 auto;
+    margin-top: var(--header-height);
+    max-width: 1280px;
+    width: 100%;
+}

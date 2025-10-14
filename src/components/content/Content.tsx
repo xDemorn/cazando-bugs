@@ -14,8 +14,8 @@ function Content() {
     id: 1,
     title: 'Código espagueti',
     upcoming: false,
-    thumbnail: 'cazando-bugs/assets/spaghetti-code-podcast-thumbnail.jpg',
-    audio: 'cazando-bugs/assets/podcast_codigo_espagueti.mp3',
+    thumbnail: 'assets/spaghetti-code-podcast-thumbnail.jpg',
+    audio: 'assets/podcast_codigo_espagueti.mp3',
     hosts: ['Alberto', 'Diego', 'Mikolaj']
   }]);
 
@@ -24,7 +24,7 @@ function Content() {
       <div
         className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-accent/20"
         style={{
-          backgroundImage: 'url(cazando-bugs/public/assets/background-main.png)',
+          backgroundImage: 'url(assets/background-main.png)',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

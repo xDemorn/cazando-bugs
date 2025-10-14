@@ -1,10 +1,11 @@
-import './style.css'
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
 
-const $countdown = document.querySelector('span#countdown') as HTMLSpanElement;
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
 
-if ($countdown) setInterval(startCountdown, 1000);
-
-function startCountdown() {
+export const getTimeToNextMonday = (): string => {
     // Get current date and time
     const now = new Date();
 
@@ -29,10 +30,10 @@ function startCountdown() {
     const minutes = Math.floor((diffMs / (1000 * 60)) % 60);
     const seconds = Math.floor((diffMs / 1000) % 60);
 
-    $countdown.innerText = `${formatNumber(days)}:${formatNumber(hours)}:${formatNumber(minutes)}:${formatNumber(seconds)}`;
+    return `${formatNumber(days)}:${formatNumber(hours)}:${formatNumber(minutes)}:${formatNumber(seconds)}`;
 }
 
-function formatNumber(x: number): number | string {
+export const formatNumber = (x: number): number | string => {
     if (x >= 10) return x;
 
     return `0${x}`;

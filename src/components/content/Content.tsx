@@ -7,12 +7,15 @@ function Content() {
   const [podcasts] = useState<Array<Podcast>>([{
     id: 0,
     title: 'Dragones volando al revés',
+    desc: 'Hablaremos de dragons que vuelan al reves y NPC que se creen Superman!\nNo os lo perdais!!!',
     upcoming: true,
+    thumbnail: 'assets/dragon.webp',
     hosts: ['Alberto', 'Diego', 'Mikolaj']
   },
   {
     id: 1,
     title: 'Código espagueti',
+    desc: 'Hablamos de como evitar un mal y poco mantenible código.',
     upcoming: false,
     thumbnail: 'assets/spaghetti-code-podcast-thumbnail.jpg',
     audio: 'assets/podcast_codigo_espagueti.mp3',

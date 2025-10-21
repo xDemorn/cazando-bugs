@@ -31,11 +31,53 @@
         }
     }
 
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        p.desc {
+            font-size: .9rem;
+            color: lightgrey;
+        }
+
+        p.title {
+            font-size: 1.5rem;
+        }
+
+        p.hosts-title {
+            font-size: 1.25rem;
+        }
+
+        .card-footer-hosts {
+            display: flex;
+            gap: 8px;
+
+            span {
+                /* padding: 2px 24px; */
+                flex: 1;
+                text-align: center;
+                border-radius: 16px;
+                border: 1px solid black;
+                background: red;
+            }
+        }
+    }
+
     &:is(.upcoming) {
-        justify-content: center;
+        img {
+            filter: blur(12px);
+        }
+
+        .card-header {
+            .card-header-overlay {
+                opacity: 1;
+                font-size: 2rem;
+            }
+        }
         
         .card-footer {
-            p {
+            p.countdown {
                 flex: 1;
                 text-align: center;
                 font-size: 2rem;
@@ -43,12 +85,12 @@
         }
     }
 
-    &:not(.upcoming) {
+    /* &:not(.upcoming) {
         .card-footer {
             .card-footer-hosts {
                 font-size: .8rem;
                 color: grey;
             }
         }
-    }
+    } */
 }
